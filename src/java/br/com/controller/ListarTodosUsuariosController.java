@@ -37,7 +37,7 @@ public class ListarTodosUsuariosController extends HttpServlet {
         try {
             UsuarioDAO dao = new UsuarioDAO();
             request.setAttribute("usuarios", dao.listarTodos());
-            request.getRequestDispatcher("listar-usuarios.jsp")
+            request.getRequestDispatcher("listar-todos-usuarios.jsp")
                     .forward(request, response);
         } catch (Exception e) {
             System.out.println("Problemas ao listar usuarios"

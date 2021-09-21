@@ -13,6 +13,7 @@
     <body>
         <ul>
             <li> <a href="cadastro-usuario.jsp">cadastro usuário</a></li>
+            <li> <a href="<%=request.getContextPath()%>/ListarTodosUsuariosController">Listar Usuários</a></li>
         </ul>
     </body>
 </html>
