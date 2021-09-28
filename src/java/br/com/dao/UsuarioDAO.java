@@ -19,6 +19,8 @@ import java.util.List;
  */
 public class UsuarioDAO {
     private Connection con;
+    private PreparedStatement stmt;
+    private ResultSet rs;
     
     public UsuarioDAO(){
         try {
@@ -89,5 +91,10 @@ public class UsuarioDAO {
             }
         }
         return usuarios;
+    }
+    
+    public boolean login(String email, String senha){
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
     }
 }
